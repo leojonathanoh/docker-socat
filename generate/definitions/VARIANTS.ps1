@@ -7,13 +7,13 @@ $VARIANTS = @(
             # Metadata object
             _metadata = @{
                 distro = 'alpine'
-                distro_version = '3.12'
+                distro_version = '3.24'
                 platforms = 'linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/s390x'
                 job_group_key = $v
             }
             # Docker image tag. E.g. '3.12'
-            tag = $v
-            tag_as_latest = $true
+            tag = 'latest'
+            tag_as_latest = $false
         }
     }
 )
